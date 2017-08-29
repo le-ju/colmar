@@ -1,0 +1,96 @@
+html, body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  background-color: white;
+}
+
+/* Header section */
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  height: 4rem;
+  width: 100%;
+}
+
+.logo {
+  display: inline-flex;
+}
+
+.logo img {
+  padding-left: 1.5rem;
+}
+
+.navigation a{
+  text-decoration: none;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.navigation {
+  padding-right: 1rem;
+}
+
+/* Main section */
+
+.container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner section */
+
+.banner {
+  border: 1px solid blue;
+  display: flex;
+}
+
+/* Details section */
+
+.details {
+  border: 1px solid green;
+  display: flex;
+}
+
+/* Modules section */
+
+.modules {
+  border: 1px solid yellow;
+  display: flex;
+}
+
+/* Thesis section */
+
+.thesis {
+  border: 1px solid purple;
+  display: flex;
+}
+
+/* Footer section */
+
+footer {
+  border: 2px solid red;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+
+footer p {
+  padding-left: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.footer {
+  padding-right: 1.5rem;
+}
