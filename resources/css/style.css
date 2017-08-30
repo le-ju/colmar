@@ -78,12 +78,26 @@ header {
   color: white;
 }
 
-
 /* Details section */
 
 .details {
   border: 1px solid green;
   display: flex;
+  flex-direction: row;
+}
+
+.left img {
+  width: 100%;
+}
+
+.left {
+  display: block;
+  width: 60%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Modules section */
