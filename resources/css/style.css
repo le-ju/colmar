@@ -8,14 +8,21 @@ html, body {
 
 h1 {
   font-family: "Work Sans", sans-serif;
+  color: #294061;
+  font-size: 2.5rem;
+  line-height: 1;
+
 }
 
 h2 {
   font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 p {
@@ -28,9 +35,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  margin-left: 1.5rem;
-}
 
 /* Header section */
 
@@ -57,8 +61,13 @@ header {
 
 .navigation a{
   text-decoration: none;
+  color: #010101;
   padding-left: .5rem;
   padding-right: .5rem;
+}
+
+.navigation a:hover {
+  color: #D0DDDE;
 }
 
 .navigation {
@@ -80,6 +89,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 1.5rem;
+  background-color: #D0DDDE;
 }
 
 .banner img {
@@ -95,11 +106,16 @@ header {
   padding-right: 1.5rem;
 }
 
+.text h3 {
+  padding-bottom: 1rem;
+
+}
+
 .button {
   width: 100%;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  background-color: black;
+  background-color: #294061;
   text-decoration: none;
   color: white;
 }
@@ -112,6 +128,7 @@ header {
   flex-direction: row;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
 .left img {
@@ -135,6 +152,20 @@ header {
   flex-direction: row;
   padding-left: 1rem;
   padding-bottom: 1rem;
+  border-left: .1rem solid #D0DDDE;
+  border-bottom: .1rem solid #D0DDDE;
+}
+
+.text p {
+  font-size: .85rem;
+}
+
+.text a {
+  font-size: .85rem;
+}
+
+.info .text h3 {
+  padding-bottom: 0;
 }
 
 .info img {
@@ -155,6 +186,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 3.5rem;
+  background-color: #D0DDDE;
 }
 
 .learning h2 {
@@ -164,11 +196,13 @@ header {
 
 .row {
   display: flex;
+  max-height: 45%;
 }
 
 .modules {
   display: flex;
   flex-direction: column;
+  max-height: 95%;
 }
 
 #modules {
@@ -179,10 +213,6 @@ header {
   width: 30%;
 }
 
-.modules h3 {
-  border: 1px solid green;
-}
-
 .modules img {
   width: 100%;
   height: auto;
@@ -190,6 +220,9 @@ header {
 
 .text1 {
   padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #FEFEFE;
+  height: 6rem;
+  margin-bottom: 2rem;
 }
 
 .text1 h3 {
@@ -200,6 +233,7 @@ header {
 .text1 p {
   margin-top: .5rem;
   margin-bottom: 0;
+  font-size: .85rem;
 }
 
 /* Thesis section */
@@ -208,6 +242,7 @@ header {
   border: 1px solid purple;
   display: flex;
   flex-direction: column;
+  padding-left: 1.5rem;
 }
 
 .thesis h2 {
@@ -239,11 +274,18 @@ footer {
 
 footer p {
   padding-left: 1.5rem;
+  font-size: .85rem;
 }
 
 footer a {
   text-decoration: none;
   padding-left: 1rem;
+  color: #010101;
+  font-size: .85rem;
+}
+
+footer a:hover {
+  color: #D0DDDE;
 }
 
 .footer {
