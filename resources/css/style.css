@@ -1,9 +1,31 @@
 html, body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
   background-color: white;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -23,6 +45,10 @@ header {
 
 .logo {
   display: inline-flex;
+}
+
+.logo p {
+  font-size: 1.5rem;
 }
 
 .logo img {
