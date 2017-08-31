@@ -116,18 +116,50 @@ header {
   height: 100%;
 }
 
-
-
 #campus {
   padding-top: 1rem;
 }
 
 
-/* Modules section */
+/* Learning modules section */
 
-.modules {
+.learning {
   border: 1px solid yellow;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3.5rem;
+}
+
+.learning h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+}
+
+#modules {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 30%;
+}
+
+.modules h3 {
+  border: 1px solid green;
+}
+
+.modules img {
+  width: 100%;
+  height: auto;
 }
 
 /* Thesis section */
