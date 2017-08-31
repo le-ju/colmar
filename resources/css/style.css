@@ -64,7 +64,7 @@ header {
   padding-bottom: 2rem;
 }
 
-.banner .text {
+.text {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -84,6 +84,8 @@ header {
   border: 1px solid green;
   display: flex;
   flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .left img {
@@ -93,12 +95,33 @@ header {
 .left {
   display: block;
   width: 60%;
+  padding-right: 1.5rem;
 }
 
 .right {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
+
+.info {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.info img {
+  width: 35%;
+  height: 100%;
+}
+
+
+
+#campus {
+  padding-top: 1rem;
+}
+
 
 /* Modules section */
 
