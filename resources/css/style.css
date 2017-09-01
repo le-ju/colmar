@@ -74,6 +74,10 @@ header {
   padding-right: 1rem;
 }
 
+@media only screen and (min-width: 700px) {
+}
+
+
 /* Main section */
 
 .container {
@@ -118,6 +122,10 @@ header {
   background-color: #294061;
   text-decoration: none;
   color: white;
+  display: inline-block;
+  text-align: center;
+  border-radius: .2rem;
+  padding: .5rem;
 }
 
 /* Details section */
@@ -160,8 +168,13 @@ header {
   font-size: .85rem;
 }
 
-.text a {
+.details .text a {
   font-size: .85rem;
+  color: #294061;
+}
+
+.details .text a:hover {
+  color: #D0DDDE;
 }
 
 .info .text h3 {
@@ -257,7 +270,7 @@ header {
 }
 
 .thesis2 .right .info {
-  padding-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 
@@ -270,6 +283,8 @@ footer {
   align-items: center;
   height: 4rem;
   width: 100%;
+  background-color: #294061;
+  color: #FEFEFE;
 }
 
 footer p {
@@ -280,7 +295,7 @@ footer p {
 footer a {
   text-decoration: none;
   padding-left: 1rem;
-  color: #010101;
+  color: #FEFEFE;
   font-size: .85rem;
 }
 
