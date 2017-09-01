@@ -39,7 +39,7 @@ a {
 /* Header section */
 
 header {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid red;
@@ -74,7 +74,26 @@ header {
   padding-right: 1rem;
 }
 
+.mobile-nav {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .logo  {
+    display: none;
+  }
+  .navigation a {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
+
 @media only screen and (min-width: 700px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 
