@@ -124,6 +124,7 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    padding-bottom: 0;
   }
   .details .left {
     display: none;
@@ -150,6 +151,7 @@ header {
 
   .info .text {
     padding-left: 1rem;
+    padding-bottom: 3rem;
   }
 
 }
