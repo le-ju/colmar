@@ -78,16 +78,61 @@ header {
   display: flex;
 }
 
+.mobile-nav img {
+  display: flex;
+}
+
 @media only screen and (max-width: 700px) {
   .logo  {
+    display: none;
+  }
+  .navigation {
     display: none;
   }
   .navigation a {
     display: none;
   }
-  header {
-    justify-content: space-between;
+  .mobile-nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
   }
+  .container .banner {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .container .banner img {
+    width: 100%;
+    padding: 0;
+  }
+  .banner .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .text .button {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .details .left {
+    display: none;
+  }
+
+  .details .right {
+    width: 100%;
+  }
+
+  .right .info {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    
+  }
+
 }
 
 @media only screen and (min-width: 700px) {
