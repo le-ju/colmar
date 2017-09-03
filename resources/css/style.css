@@ -42,7 +42,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
   height: 4rem;
   width: 100%;
 }
@@ -82,6 +81,230 @@ header {
   display: flex;
 }
 
+/* Main section */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner section */
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.5rem;
+  background-color: #D0DDDE;
+}
+
+.banner img {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text h3 {
+  padding-bottom: 1rem;
+
+}
+
+.button {
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #294061;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  border-radius: .2rem;
+  padding: .5rem;
+}
+
+/* Details section */
+
+.details {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.left img {
+  width: 100%;
+}
+
+.left {
+  display: block;
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-left: .1rem solid #D0DDDE;
+  border-bottom: .1rem solid #D0DDDE;
+}
+
+.text p {
+  font-size: .85rem;
+}
+
+.details .text a {
+  font-size: .85rem;
+  color: #294061;
+}
+
+.details .text a:hover {
+  color: #D0DDDE;
+}
+
+.info .text h3 {
+  padding-bottom: 0;
+}
+
+.info img {
+  width: 35%;
+  height: 100%;
+}
+
+#campus {
+  padding-top: 1rem;
+}
+
+
+/* Learning modules section */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3.5rem;
+  background-color: #D0DDDE;
+}
+
+.learning h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  max-height: 45%;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  max-height: 95%;
+}
+
+#modules {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 30%;
+}
+
+.modules img {
+  width: 100%;
+  height: auto;
+}
+
+.text1 {
+  padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #FEFEFE;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.text1 h3 {
+  margin-top:0;
+  margin-bottom: 1rem;
+}
+
+.text1 p {
+  margin-top: .5rem;
+  margin-bottom: 0;
+  font-size: .85rem;
+}
+
+/* Thesis section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+
+.thesis h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis2 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
+.thesis2 .right .info {
+  padding-bottom: 1rem;
+}
+
+
+/* Footer section */
+
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #294061;
+  color: #FEFEFE;
+}
+
+footer p {
+  padding-left: 1.5rem;
+  font-size: .85rem;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #FEFEFE;
+  font-size: .85rem;
+}
+
+footer a:hover {
+  color: #D0DDDE;
+}
+
+.footer {
+  padding-right: 1.5rem;
+}
+
+/* Media queries */
 
 @media only screen and (max-width: 700px) {
   .logo  {
@@ -189,6 +412,51 @@ header {
   .text1 p {
     display: none;
   }
+
+  .container .thesis {
+    padding: 0;
+  }
+
+  .thesis2 .right {
+    display: none;
+  }
+
+  .thesis2 .left h3{
+    display: none;
+  }
+
+  .thesis2 .left p{
+    display: none;
+  }
+
+  .thesis2 .left {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .thesis h2 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .thesis .thesis2 {
+    padding-bottom: 1.5rem;
+  }
+
+  html footer {
+    height: auto;
+  }
+
+  footer .footer {
+    display: none;
+  }
+
+  footer p {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -199,234 +467,4 @@ header {
   img.mobile {
     display: none;
   }
-}
-
-
-/* Main section */
-
-.container {
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Banner section */
-
-.banner {
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 1.5rem;
-  background-color: #D0DDDE;
-}
-
-.banner img {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.text {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.text h3 {
-  padding-bottom: 1rem;
-
-}
-
-.button {
-  width: 100%;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  background-color: #294061;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  text-align: center;
-  border-radius: .2rem;
-  padding: .5rem;
-}
-
-/* Details section */
-
-.details {
-  border: 1px solid green;
-  display: flex;
-  flex-direction: row;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
-}
-
-.left img {
-  width: 100%;
-}
-
-.left {
-  display: block;
-  width: 60%;
-  padding-right: 1.5rem;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-  border-left: .1rem solid #D0DDDE;
-  border-bottom: .1rem solid #D0DDDE;
-}
-
-.text p {
-  font-size: .85rem;
-}
-
-.details .text a {
-  font-size: .85rem;
-  color: #294061;
-}
-
-.details .text a:hover {
-  color: #D0DDDE;
-}
-
-.info .text h3 {
-  padding-bottom: 0;
-}
-
-.info img {
-  width: 35%;
-  height: 100%;
-}
-
-#campus {
-  padding-top: 1rem;
-}
-
-
-/* Learning modules section */
-
-.learning {
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 3.5rem;
-  background-color: #D0DDDE;
-}
-
-.learning h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.row {
-  display: flex;
-  max-height: 45%;
-}
-
-.modules {
-  display: flex;
-  flex-direction: column;
-  max-height: 95%;
-}
-
-#modules {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 30%;
-}
-
-.modules img {
-  width: 100%;
-  height: auto;
-}
-
-.text1 {
-  padding: 1rem 1rem 1.5rem 1rem;
-  background-color: #FEFEFE;
-  height: 6rem;
-  margin-bottom: 2rem;
-}
-
-.text1 h3 {
-  margin-top:0;
-  margin-bottom: 1rem;
-}
-
-.text1 p {
-  margin-top: .5rem;
-  margin-bottom: 0;
-  font-size: .85rem;
-}
-
-/* Thesis section */
-
-.thesis {
-  border: 1px solid purple;
-  display: flex;
-  flex-direction: column;
-  padding-left: 1.5rem;
-}
-
-.thesis h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.thesis2 {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 1rem;
-}
-
-.thesis2 .right .info {
-  padding-bottom: 1rem;
-}
-
-
-/* Footer section */
-
-footer {
-  border: 2px solid red;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  width: 100%;
-  background-color: #294061;
-  color: #FEFEFE;
-}
-
-footer p {
-  padding-left: 1.5rem;
-  font-size: .85rem;
-}
-
-footer a {
-  text-decoration: none;
-  padding-left: 1rem;
-  color: #FEFEFE;
-  font-size: .85rem;
-}
-
-footer a:hover {
-  color: #D0DDDE;
-}
-
-.footer {
-  padding-right: 1.5rem;
 }
